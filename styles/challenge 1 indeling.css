@@ -1,0 +1,30 @@
+/* de div waar de onderdelen inzitten*/
+#grid-container{
+	display: grid;
+	grid-template-columns:1fr  ;
+	grid-template-rows: ;
+	grid-template-areas:
+	'title'
+	'reis'
+	'temperatuur'
+	'timeline'	
+	;
+
+	grid-row-gap:10px;
+}
+.grid-itembox1{
+grid-area:title;
+}
+.grid-itembox2{
+grid-area:reis;
+}
+.grid-itembox3{
+grid-area:temperatuur;
+}
+.grid-itembox1{
+grid-area:timeline;
+}
+
+@media only screen and (min-width: 600px) {
+/* veranderingen bij scherm groter dan 600px */	
+}
