@@ -20,6 +20,7 @@
     var options = {
       timeline: { colorByRowLabel: true },
       fontName:'Quicksand', 
+      colors: ['orange' ,'purple'],
     };
 
     chart.draw(dataTable, options);

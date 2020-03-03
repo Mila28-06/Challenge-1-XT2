@@ -3,17 +3,19 @@
 	      function drawChart() {
 	        var data = google.visualization.arrayToDataTable([
 	          ['Task', 'Hours per Day'],
-	          ['Af te leggen',     15],
-	          ['Onderweg',  5],      
+	          ['Af te leggen', 58450000],
+	          ['Afgelegd',  24330000],      
 	        ]);
 
 	        var options = {
-	          title: 'Reis',
-	          pieHole: 0.5,
+	          pieHole: 0.4,
 	    	  colors: ['#A89ABF','#49226F'],
-	    	  pieStartAngle: 90,
+	    	  pieStartAngle: 105,
 	    	  backgroundColor: '#EDEDED',
-	    	  fontName:'Quicksand',	    
+	    	  fontName:'Quicksand',	  
+	    	  legend: {position: 'bottom'},
+	    	  tooltip: {text:'value'},
+
 
 
 	    	 

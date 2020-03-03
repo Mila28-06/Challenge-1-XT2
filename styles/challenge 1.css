@@ -9,35 +9,95 @@ body{
 
 #grid-container{
 	height: 100%;
-	background-color: #D1CDE2;
+	background-color: #7691AC;
 	display: flex;
 	flex-direction: column;
 	width: 100%;
+  padding-top: 10px;
 }
 .grid-itembox1{
-	background-color: #49226F;
+	background-color: #023971;
 	display: inline-block;
 	color: white;
 	text-align: center;
 	border-radius: 10px;
 }
-.grid-itembox2{
+.grid-itembox2, .grid-itembox3,.grid-itembox4 {
 	background-color: #EDEDED;
+	border-radius: 20px;
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: auto;
+	width: 90%;
+	text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  resize: both;
+}
+.grid-itembox2>div, .grid-itembox3>div,.grid-itembox4>div{
+    margin-left: auto;
+    margin-right: auto;
+}
+h3{
+	margin-bottom:0px;
 }
 
-.grid-itembox3{
-	background-color: #EDEDED;
-}
-.grid-itembox4{
-	background-color: #EDEDED;
+.grid-itembox2 p{
+  margin-bottom: 0px;
 }
 
+/*Countdown clock*/
+
+
+li {
+  display: inline-block;
+  font-size: 13px;
+  list-style-type: none;
+  padding: 1em; 
+}
+
+li span {
+  display: block;
+  font-size: 2em;
+}
+
+/* general styling */
+
+body {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Quicksand';
+}
+
+ ul{
+  padding-inline-start: 0px;
+  margin-top: 0px;
+ }
+
+.container {
+  color: #333;
+  margin: 0 auto;
+  padding: 0px;
+  text-align: center;
+}
 
 @media only screen and (min-width: 600px){
 }
 
 
 @media only screen and (min-width: 1000px){
+
+  body{
+    align-items: flex-start;
+  }
 }
 
 @media only screen and (min-width: 1250px){

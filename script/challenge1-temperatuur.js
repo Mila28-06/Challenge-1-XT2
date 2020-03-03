@@ -15,11 +15,12 @@ google.charts.load('current', {'packages':['corechart']});
         ]);
 
         var options = {
-          title: 'Temperatuur in C..',
+          title: 'Temperatuur in  \xB0C' ,
           hAxis: {title: 'Datum',  titleTextStyle: {color: '#333'}},
           vAxis: {minValue: 0},
           backgroundColor: '#EDEDED',
-          fontName:'Quicksand'
+          fontName:'Quicksand',
+          colors: ['orange', 'purple', 'grey'],
         };
 
         var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
