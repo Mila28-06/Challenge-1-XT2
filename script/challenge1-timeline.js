@@ -2,7 +2,7 @@
   google.charts.setOnLoadCallback(drawChart);
   function drawChart() {
 
-    var container = document.getElementById('example5.1');
+    var container = document.getElementById('programmachart');
     var chart = new google.visualization.Timeline(container);
     var dataTable = new google.visualization.DataTable();
     dataTable.addColumn({ type: 'string', id: 'Room' });
@@ -13,14 +13,18 @@
       [ 'Sporten', 'Yoga',       new Date(0,0,0,12,0,0),  new Date(0,0,0,13,30,0) ],
       [ 'Sporten', 'Zumba',    new Date(0,0,0,14,0,0),  new Date(0,0,0,15,30,0) ],
       [ 'Sporten', 'Fitness',        new Date(0,0,0,16,0,0),  new Date(0,0,0,17,30,0) ],
-      [ 'Eten',   'Ontbijt',    new Date(0,0,0,12,30,0), new Date(0,0,0,14,0,0) ],
-      [ 'Eten',   'Lunch', new Date(0,0,0,14,30,0), new Date(0,0,0,16,0,0) ],
-      [ 'Eten',   'Diner',     new Date(0,0,0,16,30,0), new Date(0,0,0,18,0,0) ]]);
+      [ 'Eten',   'Ontbijt',    new Date(0,0,0,10,30,0), new Date(0,0,0,11,0,0) ],
+      [ 'Eten',   'Lunch', new Date(0,0,0,12,00,0), new Date(0,0,0,13,0,0) ],
+      [ 'Eten',   'Diner',     new Date(0,0,0,17,30,0), new Date(0,0,0,19,0,0) ],
+      [ 'hi',   'Lunch', new Date(0,0,0,14,30,0), new Date(0,0,0,16,0,0) ]])
+      ;
 
     var options = {
+      title: 'programma voor vandaag',
       timeline: { colorByRowLabel: true },
-      fontName:'Quicksand', 
-      colors: ['orange' ,'purple'],
+      colors: ['#96BCD3' ,'#001E4E','#023971'],
+      fontName: 'Quicksand',
+
     };
 
     chart.draw(dataTable, options);

@@ -28,10 +28,6 @@ grid-area:timeline;
 
 @media only screen and (min-width: 600px) {
 /* veranderingen bij scherm groter dan 600px */	
-}
-
-@media only screen and (min-width: 1000px){
-/* veranderingen bij scherm groter dan 1000px */	
 #grid-container{
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 1fr ;
@@ -41,6 +37,11 @@ grid-area:timeline;
 	'timeline timeline'
 	;
 }
+}
+
+@media only screen and (min-width: 1000px){
+/* veranderingen bij scherm groter dan 1000px */	
+
 }
 
 @media only screen and (min-width: 1250px){
