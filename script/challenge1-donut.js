@@ -3,8 +3,8 @@
 	      function drawChart() {
 	        var data = google.visualization.arrayToDataTable([
 	          ['Task', 'Kilometers'],
-	          ['Af te leggen', 58450000],
-	          ['Afgelegd',  24330000],      
+	          ['Af te leggen in km', 58450000],
+	          ['Afgelegd in km',  24330000],      
 	        ]);
 
 	        var options = {
@@ -13,8 +13,10 @@
 	    	  pieStartAngle: 105,
 	    	  backgroundColor: '#EDEDED',
 	    	  fontName:'Quicksand',	  
-	    	  legend: {position: 'bottom'},
+	    	  legend: {position: 'bottom', maxLines:'2', alignment: 'start', fontSize:'13'},
 	    	  tooltip: {text:'value'},
+	    	  fontSize:'13',
+	    	
 	        };
 
 	        var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
